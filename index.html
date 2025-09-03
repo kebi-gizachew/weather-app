@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <header>
+        <div><h1>Weather<span id="coloring">App</span></h1></div>
+        <div id="head"><p id="#first">Home</p>
+        <p><a href="#sec3">About</a></p>
+        <p>Contact</p>
+        <h3>Signup</h3>
+        <h3>Login</h3>
+        </div>
+       
+    </header>
+    <section id="grey">
+     <p>Stay Connected With Us!</p>
+     </section>
+    <main>
+        <section id="sec1">
+            <div>    
+            <h1>WeatherApp <br>Forecast</h1>
+            <p>Stay ahead with accurate weather updates anytime, anywhere. </p>
+            <p>Plan your day confidently with real-time forecasts tailored to your location.</p>
+            <button><a href="#sec4">ForeCast</a></button>
+            </div>
+            <div id="image"><img src="/5632477-removebg-preview.png"/></div>
+        </section>
+        <section id="sec2">
+            <hr>
+            <div class="division">
+                <div class="subdivision">
+                    <img src="/big-ben-clock-tower-london-sunset-special-photographic-processing.jpg"/>
+                    <p id="london">London, United Kingdom</p>
+                </div>
+                <div class="subdivision">
+                    <img src="/ottawa-parliament-hill-building.jpg"/>
+                    <p id="ottawa">Ottawa, Canada</p>
+                </div>
+                <div class="subdivision">
+                    <img src="/beautiful-building-exterior-design.jpg"/>
+                    <p id="rome">Rome, Italy</p>
+                </div>
+                <div class="subdivision" >
+                    <img src="/beautiful-eiffel-tower-landmark-parisian-hotel-resort-macau-city.jpg"/>
+                    <p id="paris">Paris, France</p>
+                </div>
+                <div class="subdivision">
+                    <img src="/futuristic-landscape-dubai.jpg"/>
+                    <p id="dubai">Dubai, UAE</p>
+                </div>
+                <div class="subdivision">
+                    <img src="/chicago-aerial-view.jpg"/>
+                    <p id="chicago">Chicago, USA</p>
+                </div>
+            </div>
+        </section>
+        <section id="sec3">
+            <div class="sec3r">
+            <img src="/smartphone-screen-with-coronavirus-application-removebg-preview.png">
+            <p>WeatherApp is your simple and reliable companion for checking the forecast anytime, anywhere. Whether you’re planning a morning jog, a weekend getaway,
+                 or just deciding what to wear, WeatherApp provides accurate and real-time updates about temperature, humidity, and conditions in any city across the world. 
+                Its easy-to-use interface ensures that you can get the information you need in seconds, keeping you prepared for whatever the skies may bring.</p>
+            </div>
+            <div class="sec3l">
+            <p>Beyond basic forecasts, WeatherApp connects you with valuable insights that make your day smoother. 
+                With location-based weather predictions, you’ll always stay a step ahead of sudden rain, intense heat, or shifting winds. By combining clarity, speed, and precision,
+                 WeatherApp doesn’t just show you the weather—it helps you make smarter decisions and enjoy your day with confidence.</p>
+            <img src="/tab.png">
+            </div>
+        </section>
+        <section id="sec4">
+            <h1>Let's Check The Weather Condition Of Your place!</h1>
+            <label>Write your city: </label>
+            <input id="country" placeholder="eg. Paris, France"/>
+            <button id="check">Check</button>
+            <div id="display">
+                <div class="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
