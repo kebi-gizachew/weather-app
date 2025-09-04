@@ -4,19 +4,19 @@ import {
 
 export async function overAll(myCity) {
   try {
-    const url = `https://api.weatherapi.com/v1/forecast.json?key=${hr}=${myCity}&days=14`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${hr}=${myCity}&days=14`;
     const response = await fetch(url, {
       method: "GET"
     });
     if (!response.ok) {
-      throw new Error("City not found or API error!");
+    throw new Error("City not found or API error!");
     }
     const tempo = await response.json();
-    return tempo;
+  return tempo;
   } catch (error) {
     console.error("Error:", error);
     alert(error.message);
-    throw error;
+  throw error;
   }
 }
 
