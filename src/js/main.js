@@ -30,12 +30,12 @@ clearDisplay(display);
   const city = cityInput.split(",")[0].toLowerCase();
   const formattedCity = city.charAt(0).toUpperCase() + city.slice(1);
   try {
-    const data = await overAll(formattedCity);
+    const [data1, data2] = await overAll(formattedCity);
 
-    data.forecast.forecastday.forEach((day, index) => {
-      makeDiv(day, index, data.location.name, data.location.country, display);
+    data2.forecast.forecastday.forEach((day, index) => {
+      makeDiv(day, index, data2.location.name, data2.location.country, display);
     });
-renderChart(data);
+renderChart(data1);
   } catch (error) {
     console.log('Fetching process halted due to an error.');
   }

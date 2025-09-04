@@ -4,15 +4,22 @@ import {
 
 export async function overAll(myCity) {
   try {
-  const url = `https://api.weatherapi.com/v1/forecast.json?key=${hr}=${myCity}&days=14`;
-    const response = await fetch(url, {
+  const url1 = `https://api.weatherapi.com/v1/forecast.json?key=${hr}=${myCity}&days=14`;
+  const url2 = `https://api.weatherapi.com/v1/forecast.json?key=${hr}=${myCity}&days=3`;
+
+    const response1 = await fetch(url1, {
       method: "GET"
     });
-    if (!response.ok) {
+    const response2 = await fetch(url2, {
+      method: "GET"
+    });
+    if (!response1.ok || !response2.ok) {
     throw new Error("City not found or API error!");
     }
-    const tempo = await response.json();
-  return tempo;
+    const tempo1 = await response1.json();
+    const tempo2 = await response2.json();
+
+  return [tempo1,tempo2];
   } catch (error) {
     console.error("Error:", error);
     alert(error.message);
