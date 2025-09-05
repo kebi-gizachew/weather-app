@@ -66,8 +66,10 @@ header h1{
     border:2px solid rgb(108, 191, 236);
 }
 #sec1 button:hover{
-    color:rgb(108, 191, 236);
     background:black;
+}
+#sec1 button a:hover{
+    color:rgb(108, 191, 236);
 }
 #sec1 h1{
     font-size:110px;
