@@ -7,7 +7,7 @@ export async function overAll(myCity) {
   const url1 = `https://api.weatherapi.com/v1/forecast.json?key=${hr}=${myCity}&days=14`;
   const url2 = `https://api.weatherapi.com/v1/forecast.json?key=${hr}=${myCity}&days=3`;
 
-    const response1 = await fetch(url1, {
+     const response1 = await fetch(url1, {
       method: "GET"
     });
     const response2 = await fetch(url2, {
@@ -22,7 +22,7 @@ export async function overAll(myCity) {
   return [tempo1,tempo2];
   } catch (error) {
     console.error("Error:", error);
-    alert(error.message);
+  alert(error.message);
   throw error;
   }
 }
@@ -39,9 +39,9 @@ export async function weatherFront(array) {
     if (b) {
       let img = document.createElement("img");
       img.src = "https:" + tempo.current.condition.icon;
-      img.alt = tempo.current.condition.text;
+    img.alt = tempo.current.condition.text;
       img.height = "10";
-      img.width = "10";
+       img.width = "10";
       b.insertAdjacentElement("afterbegin", img);
     }
   }
