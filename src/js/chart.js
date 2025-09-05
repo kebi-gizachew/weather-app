@@ -6,7 +6,7 @@ const chartCanvas = document.getElementById('myChart');
 
   const existingChart = Chart.getChart(chartCanvas);
   if (existingChart) {
-    existingChart.destroy();
+  existingChart.destroy();
   }
 
   const forecastDays = data.forecast.forecastday;

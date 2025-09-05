@@ -1,6 +1,6 @@
 import '../css/style.css';
 import {overAll,weatherFront} from './api.js';
-import {makeDiv,clearDisplay} from './dom.js';
+ import {makeDiv,clearDisplay} from './dom.js';
 import {renderChart} from './chart.js';
 export const hr = import.meta.env.VITE_BASE_API;
 const input = document.getElementById("country");

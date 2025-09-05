@@ -16,7 +16,7 @@ const colorCombo = {
 export const makeDiv = (forecastDay, index, cityName, countryName, displayElement) => {
   const {
     avgtemp_c,
-    avgtemp_f,
+  avgtemp_f,
     condition
   } = forecastDay.day;
   const store = WeatherCategory(condition.code);
@@ -39,5 +39,5 @@ id.style.background = bgColor;
 
 
 export function clearDisplay(element) {
-element.innerHTML = "";
+element.innerHTML ="";
 }
